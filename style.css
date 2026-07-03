@@ -1,0 +1,402 @@
+/* =========================
+共通設定
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #333;
+  background-color: #fdf8f4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+ヘッダー
+========================= */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ecddd3;
+  padding: 10px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  max-height: 160px;
+}
+
+.header-contact {
+  text-align: right;
+}
+
+.tel-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.tel-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d7db3;
+}
+
+.business-hours {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* =========================
+メインビジュアル
+========================= */
+
+.hero {
+  background: linear-gradient(135deg, #fff9f5, #fdf0e6);
+  text-align: center;
+  padding: 90px 20px;
+  border-bottom: 2px solid #f0ddd0;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #1e5e8a;
+  margin-bottom: 20px;
+  line-height: 1.65;
+  font-weight: 700;
+}
+
+.hero h1 .accent {
+  color: #e07b3a;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  color: #555;
+}
+
+/* =========================
+ボタン
+========================= */
+
+.btn-primary {
+  display: inline-block;
+  background: #e07b3a;
+  color: #fff;
+  padding: 14px 38px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.25s;
+  letter-spacing: 0.03em;
+}
+
+.btn-primary:hover {
+  background: #c8692a;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: #fff;
+  color: #2d7db3;
+  border: 2px solid #2d7db3;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.25s;
+}
+
+.btn-secondary:hover {
+  background: #2d7db3;
+  color: #fff;
+}
+
+/* =========================
+各セクション
+========================= */
+
+section {
+  padding: 70px 0;
+}
+
+section h2 {
+  text-align: center;
+  color: #1e5e8a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-white {
+  background: #ffffff;
+}
+
+.lead {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* =========================
+乾太くん
+========================= */
+
+.dryer {
+  background: #fff9f5;
+  border-top: 1px solid #ecddd3;
+  border-bottom: 1px solid #ecddd3;
+}
+
+.feature-list {
+  max-width: 600px;
+  margin: 20px auto 30px;
+  list-style: none;
+}
+
+.feature-list li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 14px 18px;
+  border-left: 5px solid #e07b3a;
+  border-radius: 0 6px 6px 0;
+  font-size: 1rem;
+}
+
+.dryer-image {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* =========================
+会社紹介
+========================= */
+
+.about {
+  background: #ffffff;
+}
+
+.about p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #444;
+}
+
+.about-quote {
+  font-size: 1.2rem;
+  color: #1e5e8a;
+  font-weight: 700;
+  text-align: center;
+  border-left: 4px solid #e07b3a;
+  padding: 12px 24px;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  background: #fff9f5;
+  border-radius: 0 8px 8px 0;
+  text-align: left;
+}
+
+/* =========================
+サービス
+========================= */
+
+.services {
+  background: #fdf8f4;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #ecddd3;
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.service-card h3 {
+  color: #2d7db3;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* =========================
+対応地域
+========================= */
+
+.area {
+  background: #ffffff;
+  text-align: center;
+}
+
+.area p {
+  color: #555;
+}
+
+/* =========================
+会社概要
+========================= */
+
+.company {
+  background: #fdf8f4;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ecddd3;
+}
+
+.company-table th,
+.company-table td {
+  border-bottom: 1px solid #ecddd3;
+  padding: 15px 18px;
+  font-size: 0.95rem;
+}
+
+.company-table tr:last-child th,
+.company-table tr:last-child td {
+  border-bottom: none;
+}
+
+.company-table th {
+  width: 180px;
+  background: #fff9f5;
+  color: #1e5e8a;
+  font-weight: 700;
+}
+
+/* =========================
+お問い合わせ
+========================= */
+
+.contact {
+  background: #fff9f5;
+  text-align: center;
+  border-top: 2px solid #ecddd3;
+}
+
+.contact p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+フッター
+========================= */
+
+footer {
+  background: #1e5e8a;
+  color: #cce4f5;
+  text-align: center;
+  padding: 28px;
+  font-size: 0.9rem;
+}
+
+/* =========================
+スマホ対応
+========================= */
+
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-contact {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .company-table th,
+  .company-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .company-table tr {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
